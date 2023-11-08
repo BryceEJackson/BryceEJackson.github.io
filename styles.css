@@ -1,0 +1,284 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: "Courier New", monospace;
+    background-color: #f2f2f2;
+    color: black;
+    background-image: url('galaga.gif');
+    justify-content: center;
+}
+
+/* Navbar styles */
+.navbar-container {
+    position: relative;
+}
+
+.navbar-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 100, 0, 0.37), rgba(0, 66, 0, 0.37));
+    pointer-events: none;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    height: 6rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar-container-left,
+.navbar-container-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-container-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-button {
+    color: #32CD32; /* Lime green text color */
+    font-family: "Courier New", monospace;
+    font-size: 1rem;
+    margin: 0 10px;
+    background-color: #228B22; /* Evergreen background color */
+    border-radius: 10px; /* Rounded edges */
+    padding: 8px 20px; /* Add padding for button size */
+}
+
+.center-content {
+    text-align: center;
+}
+
+.center-content h1 {
+    color: #32CD32; /* Lime green text color */
+    font-family: "Courier New", monospace;
+    font-size: 2rem;
+    /* You can adjust the font size and styling as needed */
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar-container-left,
+    .navbar-container-right,
+    .navbar-container-center {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-button {
+        margin: 5px 0;
+        width: 40%; /* Make buttons full width on mobile */
+        font-size: .7rem;
+        align-items: center;
+    }
+}
+
+/* Profile card styles */
+.profile-card {
+    text-align: center;
+    margin: 20px auto;
+    background-color: white;
+    border: 2px solid #00aa00; /* Green border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px #00aa00; /* Green shadow */
+    max-width: 300px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Maintain image aspect ratio */
+    border: 5px solid #00aa00; /* Green border for image */
+    margin: 0 auto 10px; /* Center image and add spacing below */
+}
+
+/* Home and Education section styles */
+.home-section, .projects-section, .about-section, .contact-section {
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Project article styles */
+.project-article {
+    background-color: white;
+    border: 2px solid #32CD32; /* Lime green border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px #32CD32; /* Lime green shadow */
+    text-align: left;
+}
+
+/* Contact section styles */
+.contact-section {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact-details {
+    font-size: 1.2em;
+}
+
+.contact-details p {
+    margin: 5px 0;
+}
+
+.contact-details a {
+    color: #0070a2; /* Blue link color */
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Education section styles */
+.education {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.education-image {
+    text-align: center;
+    display: flex; /* Add display: flex; */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.education-image img {
+    max-width: 100%;
+    height: auto;
+    border: 10px solid #32CD32; /* Lime green border for the frame */
+    border-radius: 10px;
+    box-shadow: 0 0 10px #32CD32; /* Lime green shadow */
+}
+
+.card {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+/* Profile and contact section styles
+
+
+/* Profile and contact section styles */
+.profile-and-contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.profile-card,
+.contact-card {
+    text-align: center;
+    background-color: white;
+    border: 2px solid #00aa00; /* Green border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px #00aa00; /* Green shadow */
+    max-width: 300px;
+    margin: 10px;
+}
+
+.profile-card {
+    flex: 1;
+}
+
+.contact-card {
+    flex: 1;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Maintain image aspect ratio */
+    border: 5px solid #00aa00; /* Green border for image */
+    margin: 0 auto 10px; /* Center image and add spacing below */
+}
+
+/* Projects and about section styles */
+.projects-and-about {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.projects-card,
+.about-card {
+    text-align: center;
+    background-color: white;
+    border: 2px solid #00aa00; /* Green border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px #00aa00; /* Green shadow */
+    max-width: 300px;
+    margin: 10px;
+}
+
+.projects-card {
+    flex: 1;
+}
+
+.about-card {
+    flex: 1;
+}
+
+.project-article h2 {
+    font-size: 1.5em;
+}
